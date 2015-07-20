@@ -8,11 +8,15 @@ var  sass = require('gulp-sass'),
 
 // Compile sass files.
 gulp.task('sass', function () {
-    return gulp.src('style/sass/*.sass')
+    return gulp.src('style/sass/all.sass')
         .pipe(sass({indentedSyntax: true,
                     errLogToConsole: true
             }))
-        .pipe(concat('all.css'))
+        .pipe(gulp.dest('style/css/'));
+});
+
+gulp.task('uncss', function () {
+    return gulp.src('style/css/all.css')
         .pipe(minifyCss({
             keepSpecialComments: 0
         }))
@@ -24,7 +28,8 @@ gulp.task('sass', function () {
 
 // Watch for changes.
 gulp.task('watch', function () {
-    gulp.watch('style/sass/*.sass', ['sass']);
+    gulp.watch('style/sass/all.sass', ['sass']);
+    gulp.watch('style/css/all.css', ['uncss']);
 });
 
-gulp.task('default', ['sass', 'watch']);
+gulp.task('default', ['sass', 'uncss', 'watch']);

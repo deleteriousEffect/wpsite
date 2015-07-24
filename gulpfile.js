@@ -15,7 +15,7 @@ gulp.task('sass', function () {
         .pipe(gulp.dest('style/css/'));
 });
 
-gulp.task('uncss', function () {
+gulp.task('uncss', ['sass'], function () {
     return gulp.src('style/css/all.css')
         .pipe(minifyCss({
             keepSpecialComments: 0
@@ -28,8 +28,8 @@ gulp.task('uncss', function () {
 
 // Watch for changes.
 gulp.task('watch', function () {
-    gulp.watch('style/sass/all.sass', ['sass']);
+    gulp.watch('style/sass/*.sass', ['sass']);
     gulp.watch('style/css/all.css', ['uncss']);
 });
 
-gulp.task('default', ['sass', 'uncss', 'watch']);
+gulp.task('default', ['uncss', 'watch']);

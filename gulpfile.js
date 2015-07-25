@@ -28,8 +28,7 @@ gulp.task('uncss', ['sass'], function () {
 
 // Watch for changes.
 gulp.task('watch', function () {
-    gulp.watch('style/sass/*.sass', ['sass']);
-    gulp.watch('style/css/all.css', ['uncss']);
+    gulp.watch('style/sass/*.sass', ['uncss']);
 });
 
 gulp.task('default', ['uncss', 'watch']);

@@ -26,9 +26,14 @@ gulp.task('uncss', ['sass'], function () {
         .pipe(gulp.dest('style/css/'));
 });
 
+gulp.task('movePlugins', function () {
+    return gulp.src('node_modules/jquery-smooth-scroll/jquery.smooth-scroll.min.js')
+        .pipe(gulp.dest('js/plugins/'));
+});
+
 // Watch for changes.
 gulp.task('watch', function () {
     gulp.watch('style/sass/*.sass', ['uncss']);
 });
 
-gulp.task('default', ['uncss', 'watch']);
+gulp.task('default', ['movePlugins', 'uncss', 'watch']);

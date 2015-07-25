@@ -46,7 +46,7 @@
 }
 
 .main-content {
-  background-image: url(/imgs/desert.jpg);
+  background-image: url(imgs/desert.jpg);
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;

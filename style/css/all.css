@@ -5,20 +5,28 @@
 
 .events__event {
   margin-top: 20px;
-  background-color: #666;
+  color: #666;
+  padding-bottom: 1em;
 }
 
-.events__pic-placeholder {
-  height: 350px;
-  width: 250px;
-  background-color: #333;
-  float: left;
-  margin: 20px 0;
+.events__event ::after {
+  content: "";
+  position: absolute;
+  left: 25%;
+  bottom: 0;
+  height: 1px;
+  width: 50%;
+  border-bottom: 1px solid #666;
+}
+
+.events__pic img {
+  display: block;
+  margin: 0 auto;
 }
 
 .events__content {
-  margin-left: 20px;
-  float: left;
+  height: 160px;
+  margin: .5em;
 }
 
 .hours {
@@ -26,8 +34,13 @@
 }
 
 .main-content {
-  background-image: url(http://i.imgur.com/d9TUvwM.jpg) no-repeat center center fixed;
+  background-image: url(/imgs/desert.jpg);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
   height: 568px;
 }
 

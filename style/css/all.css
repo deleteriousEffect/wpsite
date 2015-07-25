@@ -31,6 +31,16 @@
   height: 189.33px;
 }
 
+@font-face {
+  font-family: Edmunds;
+  src: url(../../fonts/edmunds_distressed.otf);
+}
+
+@font-face {
+  font-family: Spinwerad;
+  src: url(../../fonts/spinwerad.ttf);
+}
+
 .main-content {
   background-image: url(/imgs/desert.jpg);
   -webkit-background-size: cover;
@@ -39,11 +49,27 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  height: 700px;
+  height: 750px;
   color: #fefefe;
+}
+
+.main-content h1 {
+  font-size: 5em;
 }
 
 .sidebar {
   background-color: rgba(70,70,70,.4);
   height: 568px;
+}
+
+h1,
+h2,
+h3 {
+  font-family: Edmunds,Serif;
+}
+
+a,
+p,
+ul {
+  font-family: Spinwerad,Serif;
 }

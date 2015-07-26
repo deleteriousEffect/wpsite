@@ -8,13 +8,13 @@
   margin-top: 20px;
   padding-bottom: 1em; }
   .events__event ::after {
-    content: "";
-    position: absolute;
-    left: 25%;
     bottom: 0;
+    border-bottom: 1px solid #666;
+    content: "";
     height: 1px;
-    width: 50%;
-    border-bottom: 1px solid #666; }
+    left: 25%;
+    position: absolute;
+    width: 50%; }
 
 .events__pic img {
   display: block;
@@ -36,21 +36,17 @@
   src: url(../../fonts/spinwerad.ttf); }
 
 .main-content {
-  background-image: url("../../imgs/desert.jpg");
+  background-image: url("/imgs/desert.jpg");
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  background-repeat: no-repeat;
   background-position: center center;
-  height: 750px;
-  color: #fefefe; }
+  background-repeat: no-repeat;
+  color: #fefefe;
+  height: 750px; }
   .main-content h1 {
     font-size: 5em; }
-
-.sidebar {
-  background-color: rgba(70, 70, 70, 0.4);
-  height: 568px; }
 
 .menu-section__price, .menu-section__diet {
   font-size: 16px; }
@@ -65,11 +61,15 @@
   float: right; }
 
 .menu-section__sides {
-  border-right: 20px solid;
   border-left: 20px solid;
+  border-right: 20px solid;
   margin: 3em;
   padding-left: 1em;
   padding-right: 1em; }
+
+.sidebar {
+  background-color: rgba(70, 70, 70, 0.4);
+  height: 568px; }
 
 h1, h2, h3, h4 {
   font-family: "Edmunds", Serif; }

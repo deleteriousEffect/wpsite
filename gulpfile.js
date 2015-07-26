@@ -34,9 +34,17 @@ gulp.task('movePlugins', function () {
         .pipe(gulp.dest('js/plugins/'));
 });
 
+// Concat javasript.
+gulp.task('js', function () {
+    return gulp.src(['js/plugins/*.js', 'js/*.js'])
+        .pipe(concat('all.js'))
+        .pipe(gulp.dest('js/all/'));
+});
+
 // Watch for changes.
 gulp.task('watch', function () {
     gulp.watch('style/sass/*.sass', ['uncss']);
+    gulp.watch('js/**/*.js', ['js']);
 });
 
-gulp.task('default', ['movePlugins', 'uncss', 'watch']);
+gulp.task('default', ['movePlugins', 'uncss', 'js', 'watch']);

@@ -1,52 +1,42 @@
 .daily {
-  height: 246.96px;
-}
+  height: 246.95652px; }
 
 .events {
-  clear: both;
-}
+  clear: both; }
 
 .events__event {
   margin-top: 20px;
-  padding-bottom: 1em;
-}
-
-.events__event ::after {
-  content: "";
-  position: absolute;
-  left: 25%;
-  bottom: 0;
-  height: 1px;
-  width: 50%;
-  border-bottom: 1px solid #666;
-}
+  padding-bottom: 1em; }
+  .events__event ::after {
+    content: "";
+    position: absolute;
+    left: 25%;
+    bottom: 0;
+    height: 1px;
+    width: 50%;
+    border-bottom: 1px solid #666; }
 
 .events__pic img {
   display: block;
-  margin: 0 auto;
-}
+  margin: 0 auto; }
 
 .events__content {
   height: 160px;
-  margin: .5em;
-}
+  margin: .5em; }
 
 .hours {
-  height: 189.33px;
-}
+  height: 189.33333px; }
 
 @font-face {
-  font-family: Edmunds;
-  src: url(../../fonts/edmunds_distressed.otf);
-}
+  font-family: 'Edmunds';
+  src: url(../../fonts/edmunds_distressed.otf); }
 
 @font-face {
-  font-family: Spinwerad;
-  src: url(../../fonts/spinwerad.ttf);
-}
+  font-family: 'Spinwerad';
+  src: url(../../fonts/spinwerad.ttf); }
 
 .main-content {
-  background-image: url(../../imgs/desert.jpg);
+  background-image: url("../../imgs/desert.jpg");
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -54,27 +44,19 @@
   background-repeat: no-repeat;
   background-position: center center;
   height: 750px;
-  color: #fefefe;
-}
-
-.main-content h1 {
-  font-size: 5em;
-}
+  color: #fefefe; }
+  .main-content h1 {
+    font-size: 5em; }
 
 .sidebar {
-  background-color: rgba(70,70,70,.4);
-  height: 568px;
-}
+  background-color: rgba(70, 70, 70, 0.4);
+  height: 568px; }
 
-h1,
-h2,
-h3 {
-  font-family: Edmunds,Serif;
-}
+.menu-section__price {
+  margin-left: 1em; }
 
-a,
-p,
-span,
-ul {
-  font-family: Spinwerad,Serif;
-}
+h1, h2, h3, h4 {
+  font-family: "Edmunds", Serif; }
+
+p, ul, a, span {
+  font-family: "Spinwerad", Serif; }

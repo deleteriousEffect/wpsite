@@ -21,9 +21,12 @@ gulp.task('uncss', ['sass'], function () {
             keepSpecialComments: 0
         }))
         .pipe(uncss({
-            html: ['index.html'],
+            html: ['index.html',
+                'menu/**/*.html',
+                'about/**/*html',
+                ]
         }))
-        .pipe(gulp.dest('style/css/'));
+        .pipe(gulp.dest('build/style/css/'));
 });
 
 gulp.task('movePlugins', function () {

@@ -5,7 +5,8 @@
   display: none; }
 
 .events {
-  clear: both; }
+  clear: both;
+  padding-top: 1.5em; }
 
 .events__event {
   margin-top: 20px;

@@ -1,6 +1,3 @@
-.daily {
-  height: 246.95652px; }
-
 .hidden {
   display: none; }
 
@@ -49,6 +46,15 @@
   background-repeat: no-repeat;
   color: #fefefe;
   height: 700px; }
+  @media screen and (max-width: 756px) {
+    .main-content {
+      background-image: url("../../imgs/wp-logo-skull-small.png");
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat; } }
   .main-content h1 {
     font-size: 5em; }
 
@@ -80,9 +86,6 @@
 
 .navbar-toggle {
   padding: 14px 15px; }
-
-.sidebar {
-  height: 700px; }
 
 h1, h2, h3, h4 {
   font-family: "Edmunds", Serif; }

@@ -3,7 +3,11 @@
 
 .main-content
   +cover-background('../../imgs/wp-logo-skull.png')
+  @media screen and (max-width: 756px)
+    .main-content
+    +cover-background('../../imgs/wp-logo-skull-small.png')
   color: #fefefe
   height: $main-content-height
   h1
     font-size: 5em
+

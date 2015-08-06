@@ -75,6 +75,9 @@
   font-family: 'Rubik', sans-serif;
   font-size: 18px; }
 
+.navbar__brand {
+  display: inline; }
+
 .sidebar {
   background-color: rgba(70, 70, 70, 0.4);
   height: 568px; }

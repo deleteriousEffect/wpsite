@@ -40,7 +40,7 @@
   src: url(../../fonts/spinwerad.ttf); }
 
 .main-content {
-  background-image: url("../../imgs/desert.jpg");
+  background-image: url("../../imgs/wp-logo-skull.png");
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -48,7 +48,7 @@
   background-position: center center;
   background-repeat: no-repeat;
   color: #fefefe;
-  height: 750px; }
+  height: 700px; }
   .main-content h1 {
     font-size: 5em; }
 
@@ -82,8 +82,7 @@
   padding: 14px 15px; }
 
 .sidebar {
-  background-color: rgba(70, 70, 70, 0.4);
-  height: 568px; }
+  height: 700px; }
 
 h1, h2, h3, h4 {
   font-family: "Edmunds", Serif; }

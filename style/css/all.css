@@ -78,6 +78,9 @@
 .navbar__brand {
   display: inline; }
 
+.navbar-toggle {
+  padding: 14px 15px; }
+
 .sidebar {
   background-color: rgba(70, 70, 70, 0.4);
   height: 568px; }
